@@ -16,4 +16,5 @@ server <- function(input, output, session){
 
 
   source(file.path("source", "download_md.R"), local = TRUE)$value
+  source(file.path("source", "download_report.R"), local = TRUE)$value
 }

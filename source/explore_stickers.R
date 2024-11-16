@@ -82,20 +82,4 @@ observeEvent(input$btnLabel,{
 
 
 
-# ARIMA:   Autoregressive Integrating Moving Average Model -Forecasting -Arima Results
-# GARCH:   Generalized Autoregressive Conditional Heteroscedastic Model -Garch Forecasting -Garch Results
-# Prophet-Prophet Forecasting-Prophet Results
-# K-NN regression time series forecasting
-# Feed Foward Neural network
-
-# observeEvent(input$btnLabel,{
-#   req(input$submit)
-#   
-#   names <- input$btnLabel
-#   subtitle <- sticker %>% filter(symbol %in% input$btnLabel)
-#   subtitle <- gsub("\\(.*","",subtitle$name)
-#   
-#   
-# })
-
 

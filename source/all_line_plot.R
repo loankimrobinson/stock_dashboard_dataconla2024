@@ -87,10 +87,13 @@ observeEvent(input$submit,{
     
   })
   
+  title_line_out <- HTML(paste0("<span style='font-size:14px;'>",paste0(paste0("<span style='font-size:18px;color:#d91e49;font-weight:bold;'>",name,"</span>"), collapse = " vs "),"</span><span style='font-size:15px;'>","&nbsp;&nbsp;&nbsp;","","</span>",
+                                    "<span style='font-size:17px;'>", date_from, " - ", date_to,"</span>"))
+  values$title_line_out <- title_line_out
+  
   # Title of the box
   output$title_line  <- renderText(
-    HTML(paste0("<span style='font-size:14px;'>",paste0(paste0("<span style='font-size:18px;color:#d91e49;font-weight:bold;'>",name,"</span>"), collapse = " vs "),"</span><span style='font-size:15px;'>","&nbsp;&nbsp;&nbsp;","","</span>",
-                "<span style='font-size:17px;'>", date_from, " - ", date_to,"</span>"))
+    values$title_line_out
   )
   
   # render everything in a box
@@ -221,14 +224,13 @@ observeEvent(input$canvasClicked, {
 
 })
 
-# observeEvent(input$legendClicked, {
-#   outputText <<- paste0("You clicked into the legend and selected series ", input$legendClicked, ".")
-#   print(input$legendClicked)
-#   print(outputText )
-# })
 
+#=========================================
 
-#===========================================
+observeEvent(input$dl_report,{
+  
+  
+})
 
 
 

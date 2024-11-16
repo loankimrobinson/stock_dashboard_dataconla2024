@@ -45,14 +45,17 @@ output$date_to <- renderUI({
   )
 })
 
+
 output$submit_bt <- renderUI({
-  tagList(
-    br(),
-    actionButton("submit", "Get Symbols", icon("paper-plane"), style = "display: inline-block;align-items:left;width:48%;text-align:center;text-color:white;background-color:#F6F4F3;border-color:#F6F4F3;box-shadow: 1px 2px 2px 0px #003b9a;"),
-    downloadButton("dl_report", "Download Report", icon("download"), style = "display: inline-block;align-items:right;width:48%;text-align:center;text-color:white;background-color:#F6F4F3;border-color:#F6F4F3;box-shadow: 1px 2px 2px 0px #003b9a;"),
-    br(),
-    br()
-  )
-})
+    tagList(
+      br(),
+      actionButton("submit", "Get Symbols", icon("paper-plane"), style = "display: inline-block;align-items:left;width:48%;text-align:center;text-color:white;background-color:#F6F4F3;border-color:#F6F4F3;box-shadow: 1px 2px 2px 0px #003b9a;"),
+      actionButton("dl_report", "Download Report", icon("download"), style = "display: inline-block;align-items:right;width:48%;text-align:center;text-color:white;background-color:#F6F4F3;border-color:#F6F4F3;box-shadow: 1px 2px 2px 0px #003b9a;"),
+      br(),
+      br()
+    )
+  })
+
+
 
 
